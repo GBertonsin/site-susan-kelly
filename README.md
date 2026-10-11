@@ -64,11 +64,11 @@ concluída quando atende aos critérios abaixo. *Status: critérios propostos em
 
 | Página / seção | Critério de aceite (verificável) |
 | --- | --- |
-| Início (`#topo`) | Título principal e botão "Ver horários e agendar" visíveis; o botão leva à seção `#agendamento`; os 5 links da navegação rolam até a seção correta. |
-| Sobre (`#sobre`) | Texto institucional confirmado pela Susan; foto real dela no lugar do placeholder; público-alvo confirmado; nenhum texto "(a inserir)" visível. |
-| Portfólio (`#portfolio`) | Os 6 quadros substituídos por fotos reais das obras da Susan, cada uma com texto alternativo (`alt`); nenhum placeholder "obra 0X" visível. |
-| Cursos (`#cursos`) | Nome, descrição e nível/faixa etária de cada curso confirmados pela Susan; nenhum curso de exemplo restante. |
-| Galeria (`#galeria`) | Apenas trabalhos reais de alunos com autorização de uso de imagem confirmada por escrito (mensagem ou termo); nenhum placeholder "trabalho" visível. |
+| Início | Título principal e botão "Ver horários e agendar" visíveis; o botão leva à seção `#agendamento`; os 5 links da navegação rolam até a seção correta. |
+| Sobre | Texto institucional confirmado pela Susan; foto real dela no lugar do placeholder; público-alvo confirmado; nenhum texto "(a inserir)" visível. |
+| Portfólio | Os 6 quadros substituídos por fotos reais das obras da Susan, cada uma com texto alternativo; nenhum placeholder "obra 0X" visível. |
+| Cursos | Nome, descrição e nível/faixa etária de cada curso confirmados pela Susan; nenhum curso de exemplo restante. |
+| Galeria | Apenas trabalhos reais de alunos com autorização de uso de imagem confirmada por escrito; nenhum placeholder "trabalho" visível. |
 | Todas | Sem sobreposição de elementos nem rolagem horizontal entre 360 px e 1920 px de largura; nenhum link quebrado; nenhum `TODO` no código publicado fora dos registrados nas Pendências. |
 
 ## Pendências conhecidas (marcadas como `TODO` no código)
