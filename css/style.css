@@ -312,6 +312,7 @@ section > h2, section > .sobre-texto h2 { font-size: clamp(28px, 4vw, 38px); fon
   justify-content: center;
 }
 .agenda-placeholder { color: var(--ink-soft); font-size: 14px; margin: 0; }
+.agenda-embed iframe { border: 0; width: 100%; }
 
 .btn-whatsapp {
   display: inline-block;
