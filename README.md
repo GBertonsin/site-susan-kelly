@@ -94,6 +94,33 @@ exatamente os 10 itens listados.
 Ao resolver uma pendência, remova o comentário `TODO` correspondente e a linha
 da tabela no mesmo commit.
 
+## Como alterar o conteúdo
+
+Todo o conteúdo está em `index.html`; a aparência está em `css/style.css`.
+
+- **Textos:** abra `index.html` e localize a seção pelo `id` (`#sobre`,
+  `#portfolio`, `#cursos`, `#galeria`, `#agendamento`, `#contato`). Edite o
+  texto entre as tags e salve.
+- **Imagens:** coloque o arquivo em `assets/img/` (nomes em minúsculas, com
+  hífen, ex.: `obra-01.jpg`). No `index.html`, troque o bloco de placeholder
+  (`<span>obra 01</span>`, `<span>trabalho</span>` ou `<span>foto da Susan...</span>`)
+  por `<img src="assets/img/obra-01.jpg" alt="descrição da imagem">`. Todo
+  `<img>` deve ter o atributo `alt`.
+- **Cores e fontes:** estão como variáveis no início de `css/style.css`
+  (`:root`: `--ochre`, `--ink`, `--canvas` etc.). Alterar o valor da variável
+  muda o site inteiro.
+- **Número de WhatsApp:** no botão "Confirmar pelo WhatsApp", troque
+  `55SEUNUMEROAQUI` na URL `https://wa.me/...` pelo número no formato
+  `55DDDNUMERO` (somente dígitos, sem espaços, `+` ou parênteses). Ex.:
+  `5562999999999`.
+- **Agenda de agendamento:** na página de agendamento do Google Calendar,
+  copie o código de incorporação (`<iframe ...>`) e cole-o dentro de
+  `<div class="agenda-embed">`, no lugar do parágrafo
+  `agenda-placeholder`. O estilo do iframe já está no CSS; não use `style`
+  inline.
+- **Publicar:** salve, faça o commit e o push na branch `main`; o deploy é
+  automático (ver "Publicação").
+
 ## Publicação (deploy)
 
 O deploy é feito pela integração Git nativa do hPanel da Hostinger
