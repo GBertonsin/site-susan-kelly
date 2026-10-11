@@ -56,6 +56,21 @@ python3 -m http.server 8000
 
 e acessar `http://localhost:8000`.
 
+## Critérios de aceite das páginas institucionais
+
+Referência para a revisão da Sprint 02. Cada página (seção) só é considerada
+concluída quando atende aos critérios abaixo. *Status: critérios propostos em
+11/10/2026, a confirmar com a proprietária.*
+
+| Página / seção | Critério de aceite (verificável) |
+| --- | --- |
+| Início (`#topo`) | Título principal e botão "Ver horários e agendar" visíveis; o botão leva à seção `#agendamento`; os 5 links da navegação rolam até a seção correta. |
+| Sobre (`#sobre`) | Texto institucional confirmado pela Susan; foto real dela no lugar do placeholder; público-alvo confirmado; nenhum texto "(a inserir)" visível. |
+| Portfólio (`#portfolio`) | Os 6 quadros substituídos por fotos reais das obras da Susan, cada uma com texto alternativo (`alt`); nenhum placeholder "obra 0X" visível. |
+| Cursos (`#cursos`) | Nome, descrição e nível/faixa etária de cada curso confirmados pela Susan; nenhum curso de exemplo restante. |
+| Galeria (`#galeria`) | Apenas trabalhos reais de alunos com autorização de uso de imagem confirmada por escrito (mensagem ou termo); nenhum placeholder "trabalho" visível. |
+| Todas | Sem sobreposição de elementos nem rolagem horizontal entre 360 px e 1920 px de largura; nenhum link quebrado; nenhum `TODO` no código publicado fora dos registrados nas Pendências. |
+
 ## Pendências conhecidas (marcadas como `TODO` no código)
 
 - Substituir os placeholders de imagem (portfólio da Susan, galeria dos
