@@ -73,16 +73,26 @@ concluída quando atende aos critérios abaixo. *Status: critérios propostos em
 
 ## Pendências conhecidas (marcadas como `TODO` no código)
 
-- Substituir os placeholders de imagem (portfólio da Susan, galeria dos
-  alunos, foto de perfil) por fotos reais, mediante autorização de uso
-  de imagem.
-- Confirmar textos institucionais e nomes/descrições reais dos cursos
-  junto à proprietária.
-- Substituir o bloco `.agenda-embed` pelo `<iframe>` real da Agenda de
-  Compromissos do Google Calendar, assim que os horários forem
-  configurados (Sprint 03).
-- Substituir `55SEUNUMEROAQUI` no botão do WhatsApp pelo número real da
-  instituição, no formato `55DDDNUMERO`.
+Todos os 10 comentários `TODO` de `index.html` estão registrados abaixo e
+vinculados ao card correspondente do quadro Kanban (Trello). Para conferir,
+rode `grep -n TODO index.html` e compare com a tabela: o resultado deve ser
+exatamente os 10 itens listados.
+
+| # | Onde (seção) | Pendência | Card no Trello |
+| --- | --- | --- | --- |
+| 1 | Sobre | Substituir o placeholder pela foto real da Susan Kelly. | Validar conteúdo (textos e imagens) com a Susan |
+| 2 | Sobre | Confirmar se crianças fazem parte do público prioritário. | Validar conteúdo (textos e imagens) com a Susan |
+| 3 | Portfólio | Substituir os 6 quadros por fotos reais das obras da Susan. | Validar conteúdo (textos e imagens) com a Susan |
+| 4 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
+| 5 | Galeria | Substituir pelos trabalhos reais dos alunos, com autorização de uso de imagem confirmada. | Validar conteúdo (textos e imagens) com a Susan |
+| 6 | Agendamento | Substituir o bloco `.agenda-embed` pelo `<iframe>` da Agenda de Compromissos do Google Calendar (Sprint 03). | Implementar Agenda de Compromissos do Google Calendar |
+| 7 | Agendamento | Substituir `55SEUNUMEROAQUI` no botão do WhatsApp pelo número real, no formato `55DDDNUMERO`. | Implementar botão de confirmação via WhatsApp (wa.me) |
+| 8 | Rodapé | Inserir o endereço real. | Validar conteúdo (textos e imagens) com a Susan |
+| 9 | Rodapé | Inserir o telefone/WhatsApp real. | Validar conteúdo (textos e imagens) com a Susan |
+| 10 | Rodapé | Inserir o e-mail real. | Validar conteúdo (textos e imagens) com a Susan |
+
+Ao resolver uma pendência, remova o comentário `TODO` correspondente e a linha
+da tabela no mesmo commit.
 
 ## Publicação (deploy)
 
