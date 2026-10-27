@@ -129,6 +129,8 @@ section > h2, section > .sobre-texto h2 { font-size: clamp(28px, 4vw, 38px); fon
   line-height: 1.08;
   letter-spacing: -0.01em;
   max-width: 15ch;
+  text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .hero-lede {
