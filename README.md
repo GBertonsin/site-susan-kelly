@@ -31,6 +31,9 @@ separadamente à disciplina).
 │   └── style.css       # estilos do site
 ├── js/
 │   └── main.js         # script do site (por enquanto, mínimo)
+├── favicon.svg         # ícone do site
+├── tests/
+│   └── t05_responsividade.py  # teste T05 (360 a 1920 px)
 ├── assets/
 │   └── img/            # imagens reais (portfólio, galeria, fotos) — a preencher
 └── README.md
@@ -55,6 +58,21 @@ python3 -m http.server 8000
 ```
 
 e acessar `http://localhost:8000`.
+
+## Como executar o teste de responsividade (T05)
+
+Requer Python 3 e o Playwright (`pip install playwright` e `playwright install chromium`).
+Na raiz do repositório, rode:
+
+```bash
+python3 tests/t05_responsividade.py
+```
+
+O script abre o `index.html` em 8 larguras (360 a 1920 px), verifica rolagem
+horizontal, elementos fora da janela, sobreposição do menu, alvos de toque
+menores que 44 px e texto menor que 14 px, e salva uma captura de tela de cada
+largura em `tests/saida/` (pasta ignorada pelo Git). O código de saída é 0 quando
+todas as larguras passam.
 
 ## Critérios de aceite das páginas institucionais
 
