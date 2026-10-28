@@ -33,6 +33,7 @@ separadamente à disciplina).
 │   └── main.js         # script do site (por enquanto, mínimo)
 ├── favicon.svg         # ícone do site (símbolo da marca)
 ├── tests/
+│   ├── t04_chromium.py        # teste T04 parcial: navegação, imagens e contraste
 │   └── t05_responsividade.py  # teste T05 (360 a 1920 px)
 ├── assets/
 │   ├── img/            # imagens reais (portfólio, galeria, fotos) — a preencher
@@ -87,6 +88,20 @@ horizontal, elementos fora da janela, sobreposição do menu, alvos de toque
 menores que 44 px e texto menor que 14 px, e salva uma captura de tela de cada
 largura em `tests/saida/` (pasta ignorada pelo Git). O código de saída é 0 quando
 todas as larguras passam.
+
+## Como executar o teste de navegação e contraste (T04, parte do Chromium)
+
+Mesmos requisitos do T05. Na raiz do repositório, rode:
+
+```bash
+python3 tests/t04_chromium.py
+```
+
+O script confere se os links de navegação levam à seção certa (desktop e
+mobile), se toda imagem tem texto alternativo e carrega, se o contraste do
+texto atinge 4,5:1 (3:1 para texto grande) e se não há erros no console.
+Cobre apenas o Chromium: Safari, Edge e aparelhos reais são testados à mão na
+Sprint 04.
 
 ## Critérios de aceite das páginas institucionais
 
