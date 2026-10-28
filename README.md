@@ -31,22 +31,36 @@ separadamente à disciplina).
 │   └── style.css       # estilos do site
 ├── js/
 │   └── main.js         # script do site (por enquanto, mínimo)
-├── favicon.svg         # ícone do site
+├── favicon.svg         # ícone do site (símbolo da marca)
 ├── tests/
 │   └── t05_responsividade.py  # teste T05 (360 a 1920 px)
 ├── assets/
-│   └── img/            # imagens reais (portfólio, galeria, fotos) — a preencher
+│   ├── img/            # imagens reais (portfólio, galeria, fotos) — a preencher
+│   └── logo/           # logotipos da marca em SVG
 └── README.md
 ```
 
 ## Identidade visual
 
-- **Cores:** `#F2ECDD` (linho/canvas — fundo), `#23263A` (tinta — texto e
-  destaques escuros), `#C48A2E` (ocre — cor de ação/CTA), `#A84B2A`
-  (terracota — acento secundário), `#56684F` (verde-sálvia — tags).
-- **Tipografia:** [Fraunces](https://fonts.google.com/specimen/Fraunces)
-  para títulos, [Work Sans](https://fonts.google.com/specimen/Work+Sans)
-  para texto corrido — ambas via Google Fonts.
+Segue o livro de identidade visual entregue pela proprietária (designer
+Rafael Marques). O marfim ocupa cerca de 60% da página; as demais cores são
+acentos.
+
+- **Cores:** `#F4EFE6` (tela, marfim — fundo), `#C17B5C` (escultura, terracota),
+  `#9B7653` (tradição, ocre), `#6B7C5E` (natureza, verde sálvia), `#3D4F5C`
+  (pigmento, azul slate — títulos, botões e seções escuras) e `#3A3A3A`
+  (traço, grafite — texto corrido). Terracota, ocre e verde não têm contraste
+  suficiente para texto corrido sobre o marfim (de 2,9:1 a 3,9:1), por isso só
+  são usados em texto grande e detalhes.
+- **Tipografia:** as fontes da marca (Arpona, Redonda e Bickham Script) são do
+  Adobe Fonts e exigem assinatura. O site usa equivalentes gratuitas do Google
+  Fonts, para manter o custo zero: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+  nos títulos, [Figtree](https://fonts.google.com/specimen/Figtree) no texto
+  corrido e [Pinyon Script](https://fonts.google.com/specimen/Pinyon+Script)
+  nos destaques. Para usar as originais, troque as três variáveis `--font-*`
+  em `css/style.css` e o link de fontes no `index.html`.
+- **Logo:** arquivos SVG em `assets/logo/` (horizontal e símbolo, em versão
+  escura e branca). Não altere as proporções nem as cores do logo.
 
 ## Como visualizar localmente
 
@@ -91,23 +105,22 @@ concluída quando atende aos critérios abaixo. *Status: critérios propostos em
 
 ## Pendências conhecidas (marcadas como `TODO` no código)
 
-Todos os 10 comentários `TODO` de `index.html` estão registrados abaixo e
+Todos os 9 comentários `TODO` de `index.html` estão registrados abaixo e
 vinculados ao card correspondente do quadro Kanban (Trello). Para conferir,
 rode `grep -n TODO index.html` e compare com a tabela: o resultado deve ser
-exatamente os 10 itens listados.
+exatamente os 9 itens listados.
 
 | # | Onde (seção) | Pendência | Card no Trello |
 | --- | --- | --- | --- |
-| 1 | Sobre | Substituir o placeholder pela foto real da Susan Kelly. | Validar conteúdo (textos e imagens) com a Susan |
-| 2 | Sobre | Confirmar se crianças fazem parte do público prioritário. | Validar conteúdo (textos e imagens) com a Susan |
-| 3 | Portfólio | Substituir os 6 quadros por fotos reais das obras da Susan. | Validar conteúdo (textos e imagens) com a Susan |
-| 4 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
-| 5 | Galeria | Substituir pelos trabalhos reais dos alunos, com autorização de uso de imagem confirmada. | Validar conteúdo (textos e imagens) com a Susan |
-| 6 | Agendamento | Substituir o bloco `.agenda-embed` pelo `<iframe>` da Agenda de Compromissos do Google Calendar (Sprint 03). | Implementar Agenda de Compromissos do Google Calendar |
-| 7 | Agendamento | Substituir `55SEUNUMEROAQUI` no botão do WhatsApp pelo número real, no formato `55DDDNUMERO`. | Implementar botão de confirmação via WhatsApp (wa.me) |
-| 8 | Rodapé | Inserir o endereço real. | Validar conteúdo (textos e imagens) com a Susan |
-| 9 | Rodapé | Inserir o telefone/WhatsApp real. | Validar conteúdo (textos e imagens) com a Susan |
-| 10 | Rodapé | Inserir o e-mail real. | Validar conteúdo (textos e imagens) com a Susan |
+| 1 | Sobre | Substituir o placeholder pela foto real da Susan Kelly e revisar com ela os textos propostos pela equipe. | Validar conteúdo (textos e imagens) com a Susan |
+| 2 | Portfólio | Substituir os 6 quadros por fotos reais das obras da Susan. | Validar conteúdo (textos e imagens) com a Susan |
+| 3 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
+| 4 | Galeria | Substituir pelos trabalhos reais dos alunos, com autorização de uso de imagem confirmada. | Validar conteúdo (textos e imagens) com a Susan |
+| 5 | Agendamento | Substituir o bloco `.agenda-embed` pelo `<iframe>` da Agenda de Compromissos do Google Calendar (Sprint 03). | Implementar Agenda de Compromissos do Google Calendar |
+| 6 | Agendamento | Substituir `55SEUNUMEROAQUI` no botão do WhatsApp pelo número real, no formato `55DDDNUMERO`. | Implementar botão de confirmação via WhatsApp (wa.me) |
+| 7 | Rodapé | Inserir o endereço real. | Validar conteúdo (textos e imagens) com a Susan |
+| 8 | Rodapé | Inserir o telefone/WhatsApp real. | Validar conteúdo (textos e imagens) com a Susan |
+| 9 | Rodapé | Inserir o e-mail real. | Validar conteúdo (textos e imagens) com a Susan |
 
 Ao resolver uma pendência, remova o comentário `TODO` correspondente e a linha
 da tabela no mesmo commit.
@@ -125,7 +138,7 @@ Todo o conteúdo está em `index.html`; a aparência está em `css/style.css`.
   por `<img src="assets/img/obra-01.jpg" alt="descrição da imagem">`. Todo
   `<img>` deve ter o atributo `alt`.
 - **Cores e fontes:** estão como variáveis no início de `css/style.css`
-  (`:root`: `--ochre`, `--ink`, `--canvas` etc.). Alterar o valor da variável
+  (`:root`: `--tela`, `--pigmento`, `--traco` etc.). Alterar o valor da variável
   muda o site inteiro.
 - **Número de WhatsApp:** no botão "Confirmar pelo WhatsApp", troque
   `55SEUNUMEROAQUI` na URL `https://wa.me/...` pelo número no formato
