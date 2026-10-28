@@ -69,6 +69,9 @@ with sync_playwright() as p:
         print(f"{rotulo}: {len(links)} link(s) de âncora verificados")
 
         # imagens
+        # imagens lazy fora da área visível (tira do portfólio) só carregam ao rolar; força o carregamento antes de verificar
+        pg.evaluate("document.querySelectorAll('img[loading=lazy]').forEach(i => i.loading = 'eager')")
+        pg.wait_for_load_state("networkidle")
         imgs = pg.eval_on_selector_all("img", 'els => els.map(e => [e.getAttribute("src"), e.hasAttribute("alt"), e.complete && e.naturalWidth > 0])')
         for src, tem_alt, ok in imgs:
             if not tem_alt: falhas.append(f"{rotulo}: imagem sem alt: {src}")
