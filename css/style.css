@@ -304,28 +304,11 @@ section > h2, section > .sobre-texto h2 { font-size: clamp(28px, 4vw, 38px); fon
 
 .galeria-grid {
   margin-top: 36px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 130px;
-  gap: 14px;
+  columns: 3 240px;
+  column-gap: 14px;
 }
-
-.g-item {
-  background: var(--superficie);
-  border: 1px solid var(--line);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--traco);
-  font-size: 14px;
-}
-.g-tall { grid-row: span 2; }
-.g-wide { grid-column: span 2; }
-
-@media (max-width: 720px) {
-  .galeria-grid { grid-template-columns: repeat(2, 1fr); }
-}
+.galeria-grid figure { margin: 0 0 14px; break-inside: avoid; }
+.galeria-grid img { display: block; width: 100%; height: auto; border-radius: 2px; }
 
 /* ---------- Agendamento ---------- */
 .agendamento { background: var(--pigmento); }
