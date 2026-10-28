@@ -21,7 +21,9 @@
 <a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
 
 <header class="site-header">
-  <a href="#topo" class="wordmark">Susan Kelly<span>Escola de Artes</span></a>
+  <a href="#topo" class="wordmark" aria-label="Escola de Artes Susan Kelly — início">
+    <img src="assets/logo/logo-horizontal.svg" alt="Escola de Artes Susan Kelly" width="102" height="52">
+  </a>
   <nav class="main-nav" aria-label="Navegação principal">
     <a href="#sobre">A escola</a>
     <a href="#portfolio">Portfólio</a>
@@ -36,42 +38,44 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
-      <p class="hero-kicker">Pintura e desenho, ensinados com calma</p>
-      <h1>Aprender a pintar começa com prestar atenção.</h1>
+      <p class="hero-kicker">Pintura, desenho e escultura</p>
+      <h1>Enquadrar o ordinário, revelar o <em class="destaque-script">extraordinário</em>.</h1>
       <p class="hero-lede">
-        Aulas para quem nunca pegou num pincel e para quem já pinta há anos —
-        um espaço para desenvolver o olhar, a técnica e o prazer de criar,
-        no seu ritmo.
+        Na Escola de Artes Susan Kelly, adolescentes e adultos aprendem a
+        educar o olhar: ensino técnico de artes visuais, conduzido com
+        paciência e com o acolhimento de quem acompanha cada aluno de perto.
       </p>
       <a href="#agendamento" class="btn-primary">Ver horários e agendar</a>
     </div>
     <div class="hero-mark" aria-hidden="true">
-      <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-        <path d="M30 190 C 40 90, 90 40, 190 30" fill="none" stroke="#C48A2E" stroke-width="10" stroke-linecap="round"/>
-        <path d="M60 205 C 90 140, 150 90, 205 65" fill="none" stroke="#A84B2A" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
-      </svg>
+      <img src="assets/logo/simbolo.svg" alt="" width="190" height="312">
     </div>
+  </section>
+
+  <!-- LEMA -->
+  <section class="lema" aria-label="Princípios da escola">
+    <p>Elegância que acolhe.</p>
+    <p>Tradição que transforma.</p>
+    <p>Técnica que liberta.</p>
   </section>
 
   <!-- SOBRE -->
   <section id="sobre" class="sobre">
     <div class="sobre-retrato" aria-hidden="true">
-      <!-- TODO: substituir por foto real da Susan Kelly (retrato ou em ação na sala de aula) -->
+      <!-- TODO: substituir por foto real da Susan Kelly (retrato ou em ação na sala de aula) e revisar com ela os textos propostos pela equipe nesta seção e na página inicial -->
       <span>foto da Susan<br>(a inserir)</span>
     </div>
     <div class="sobre-texto">
       <h2>Sobre a escola</h2>
       <p>
-        A Escola de Artes Susan Kelly nasceu do ensino individual de pintura e
-        desenho e cresceu para receber jovens e adultos que buscam desenvolver
-        uma habilidade artística — seja como formação, seja como um hobby que
-        tira a cabeça da rotina.
-        <!-- TODO: confirmar com a Susan se crianças em desenvolvimento também fazem parte do público prioritário -->
+        A arte não reproduz o mundo inteiro: ela escolhe, enquadra e revela.
+        Assim como o artista seleciona um fragmento da realidade para elevar
+        ao extraordinário, a Escola de Artes Susan Kelly educa o olhar para
+        transformar o ordinário em beleza.
       </p>
       <p>
-        As turmas são pequenas, o ritmo é individual e o foco está em observar,
-        entender materiais e construir confiança — não em seguir um passo a
-        passo genérico.
+        O ensino é técnico e conduzido com paciência: turmas pequenas, ritmo
+        individual e atenção ao detalhe, do primeiro traço à obra concluída.
       </p>
     </div>
   </section>
@@ -94,16 +98,22 @@
   <!-- CURSOS -->
   <section id="cursos" class="cursos">
     <h2>Cursos e turmas</h2>
+    <p class="section-lede">Pintura, desenho e escultura para adolescentes e adultos.</p>
     <ul class="lista-cursos">
       <li>
         <div class="curso-nome">Pintura para iniciantes</div>
         <p>Tinta acrílica e aquarela, dos fundamentos de cor e composição às primeiras telas completas. Sem experiência prévia necessária.</p>
-        <span class="curso-tag">Jovens e adultos</span>
+        <span class="curso-tag">Adolescentes e adultos</span>
       </li>
       <li>
         <div class="curso-nome">Desenho de observação</div>
         <p>Desenho a lápis e nanquim a partir de referências reais — objetos, retrato e paisagem — trabalhando proporção e luz/sombra.</p>
-        <span class="curso-tag">Jovens e adultos</span>
+        <span class="curso-tag">Adolescentes e adultos</span>
+      </li>
+      <li>
+        <div class="curso-nome">Escultura</div>
+        <p>Modelagem em argila: forma, volume e proporção, do estudo à peça concluída.</p>
+        <span class="curso-tag">Adolescentes e adultos</span>
       </li>
       <li>
         <div class="curso-nome">Ateliê livre</div>
@@ -166,7 +176,7 @@
 
 <footer id="contato" class="site-footer">
   <div>
-    <p class="footer-wordmark">Susan Kelly — Escola de Artes</p>
+    <img class="footer-logo" src="assets/logo/logo-horizontal-branco.svg" alt="Escola de Artes Susan Kelly" width="150" height="76">
     <p><!-- TODO: inserir endereço real --> Endereço a confirmar</p>
   </div>
   <div class="footer-contato">
