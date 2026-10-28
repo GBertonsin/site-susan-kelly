@@ -113,7 +113,7 @@ concluída quando atende aos critérios abaixo. *Status: critérios propostos em
 | --- | --- |
 | Início | Título principal e botão "Ver horários e agendar" visíveis; o botão leva à seção `#agendamento`; os 5 links da navegação rolam até a seção correta. |
 | Sobre | Texto institucional confirmado pela Susan; foto real dela no lugar do placeholder; público-alvo confirmado; nenhum texto "(a inserir)" visível. |
-| Portfólio | Os 6 quadros substituídos por fotos reais das obras da Susan, cada uma com texto alternativo; nenhum placeholder "obra 0X" visível. |
+| Portfólio | Os quadros substituídos por fotos reais das obras da Susan, cada uma com texto alternativo; nenhum placeholder "obra 0X" visível. |
 | Cursos | Nome, descrição e nível/faixa etária de cada curso confirmados pela Susan; nenhum curso de exemplo restante. |
 | Galeria | Apenas trabalhos reais de alunos com autorização de uso de imagem confirmada por escrito; nenhum placeholder "trabalho" visível. |
 | Todas | Sem sobreposição de elementos nem rolagem horizontal entre 360 px e 1920 px de largura; nenhum link quebrado; nenhum `TODO` no código publicado fora dos registrados nas Pendências. |
@@ -128,7 +128,7 @@ exatamente os 5 itens listados.
 | # | Onde (seção) | Pendência | Card no Trello |
 | --- | --- | --- | --- |
 | 1 | Sobre | Substituir o placeholder pela foto real da Susan Kelly e revisar com ela os textos propostos pela equipe. | Validar conteúdo (textos e imagens) com a Susan |
-| 2 | Portfólio | Substituir os 6 quadros por fotos reais das obras da Susan. | Validar conteúdo (textos e imagens) com a Susan |
+| 2 | Portfólio | Confirmar com a Susan quais obras entram no portfólio e a ordem final (8 fotos inseridas). | Validar conteúdo (textos e imagens) com a Susan |
 | 3 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
 | 4 | Galeria | Confirmar por escrito a autorização de uso de imagem dos trabalhos exibidos (inclusive de menores de idade) e trocar pelos trabalhos finais escolhidos pela Susan. | Validar conteúdo (textos e imagens) com a Susan |
 | 5 | Agendamento | Substituir o bloco `.agenda-embed` pelo `<iframe>` da Agenda de Compromissos do Google Calendar (Sprint 03). | Implementar Agenda de Compromissos do Google Calendar |
