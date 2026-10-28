@@ -144,10 +144,15 @@ Todo o conteúdo está em `index.html`; a aparência está em `css/style.css`.
   `#portfolio`, `#cursos`, `#galeria`, `#agendamento`, `#contato`). Edite o
   texto entre as tags e salve.
 - **Imagens:** coloque o arquivo em `assets/img/` (nomes em minúsculas, com
-  hífen, ex.: `obra-01.jpg`). No `index.html`, troque o bloco de placeholder
-  (`<span>obra 01</span>`, `<span>trabalho</span>` ou `<span>foto da Susan...</span>`)
-  por `<img src="assets/img/obra-01.jpg" alt="descrição da imagem">`. Todo
-  `<img>` deve ter o atributo `alt`.
+  hífen, ex.: `obra-09.jpg`). Para trocar uma imagem existente, mantenha o
+  nome do arquivo ou altere o `src` do `<img>` correspondente em `index.html`
+  (portfólio: `.portfolio-tira`; galeria: `.galeria-grid`; foto da Susan:
+  `.sobre-retrato`). Para acrescentar uma, copie um bloco
+  `<figure><img src="assets/img/obra-09.jpg" alt="descrição da imagem"
+  width="..." height="..." loading="lazy"></figure>` dentro da mesma seção.
+  Todo `<img>` deve ter o atributo `alt` (o teste T04 verifica isso). Antes de
+  publicar fotos de alunos, confirme por escrito a autorização de uso de
+  imagem.
 - **Cores e fontes:** estão como variáveis no início de `css/style.css`
   (`:root`: `--tela`, `--pigmento`, `--traco` etc.). Alterar o valor da variável
   muda o site inteiro.
