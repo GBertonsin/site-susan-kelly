@@ -127,7 +127,7 @@ exatamente os 5 itens listados.
 
 | # | Onde (seção) | Pendência | Card no Trello |
 | --- | --- | --- | --- |
-| 1 | Sobre | Substituir o placeholder pela foto real da Susan Kelly e revisar com ela os textos propostos pela equipe. | Validar conteúdo (textos e imagens) com a Susan |
+| 1 | Sobre | Confirmar com a Susan a foto de retrato (inserida) e revisar com ela os textos propostos pela equipe. | Validar conteúdo (textos e imagens) com a Susan |
 | 2 | Portfólio | Confirmar com a Susan quais obras entram no portfólio e a ordem final (8 fotos inseridas). | Validar conteúdo (textos e imagens) com a Susan |
 | 3 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
 | 4 | Galeria | Confirmar por escrito a autorização de uso de imagem dos trabalhos exibidos (inclusive de menores de idade) e trocar pelos trabalhos finais escolhidos pela Susan. | Validar conteúdo (textos e imagens) com a Susan |
