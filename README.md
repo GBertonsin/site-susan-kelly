@@ -36,7 +36,7 @@ separadamente à disciplina).
 │   ├── t04_chromium.py        # teste T04 parcial: navegação, imagens e contraste
 │   └── t05_responsividade.py  # teste T05 (360 a 1920 px)
 ├── assets/
-│   ├── img/            # imagens reais (portfólio, galeria, fotos) — a preencher
+│   ├── img/            # imagens do portfólio e da galeria de alunos
 │   └── logo/           # logotipos da marca em SVG
 └── README.md
 ```
@@ -130,7 +130,7 @@ exatamente os 5 itens listados.
 | 1 | Sobre | Substituir o placeholder pela foto real da Susan Kelly e revisar com ela os textos propostos pela equipe. | Validar conteúdo (textos e imagens) com a Susan |
 | 2 | Portfólio | Substituir os 6 quadros por fotos reais das obras da Susan. | Validar conteúdo (textos e imagens) com a Susan |
 | 3 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
-| 4 | Galeria | Substituir pelos trabalhos reais dos alunos, com autorização de uso de imagem confirmada. | Validar conteúdo (textos e imagens) com a Susan |
+| 4 | Galeria | Confirmar por escrito a autorização de uso de imagem dos trabalhos exibidos (inclusive de menores de idade) e trocar pelos trabalhos finais escolhidos pela Susan. | Validar conteúdo (textos e imagens) com a Susan |
 | 5 | Agendamento | Substituir o bloco `.agenda-embed` pelo `<iframe>` da Agenda de Compromissos do Google Calendar (Sprint 03). | Implementar Agenda de Compromissos do Google Calendar |
 
 Ao resolver uma pendência, remova o comentário `TODO` correspondente e a linha
