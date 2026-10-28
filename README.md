@@ -120,10 +120,10 @@ concluída quando atende aos critérios abaixo. *Status: critérios propostos em
 
 ## Pendências conhecidas (marcadas como `TODO` no código)
 
-Todos os 9 comentários `TODO` de `index.html` estão registrados abaixo e
+Todos os 5 comentários `TODO` de `index.html` estão registrados abaixo e
 vinculados ao card correspondente do quadro Kanban (Trello). Para conferir,
 rode `grep -n TODO index.html` e compare com a tabela: o resultado deve ser
-exatamente os 9 itens listados.
+exatamente os 5 itens listados.
 
 | # | Onde (seção) | Pendência | Card no Trello |
 | --- | --- | --- | --- |
@@ -132,10 +132,6 @@ exatamente os 9 itens listados.
 | 3 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
 | 4 | Galeria | Substituir pelos trabalhos reais dos alunos, com autorização de uso de imagem confirmada. | Validar conteúdo (textos e imagens) com a Susan |
 | 5 | Agendamento | Substituir o bloco `.agenda-embed` pelo `<iframe>` da Agenda de Compromissos do Google Calendar (Sprint 03). | Implementar Agenda de Compromissos do Google Calendar |
-| 6 | Agendamento | Substituir `55SEUNUMEROAQUI` no botão do WhatsApp pelo número real, no formato `55DDDNUMERO`. | Implementar botão de confirmação via WhatsApp (wa.me) |
-| 7 | Rodapé | Inserir o endereço real. | Validar conteúdo (textos e imagens) com a Susan |
-| 8 | Rodapé | Inserir o telefone/WhatsApp real. | Validar conteúdo (textos e imagens) com a Susan |
-| 9 | Rodapé | Inserir o e-mail real. | Validar conteúdo (textos e imagens) com a Susan |
 
 Ao resolver uma pendência, remova o comentário `TODO` correspondente e a linha
 da tabela no mesmo commit.
@@ -155,10 +151,10 @@ Todo o conteúdo está em `index.html`; a aparência está em `css/style.css`.
 - **Cores e fontes:** estão como variáveis no início de `css/style.css`
   (`:root`: `--tela`, `--pigmento`, `--traco` etc.). Alterar o valor da variável
   muda o site inteiro.
-- **Número de WhatsApp:** no botão "Confirmar pelo WhatsApp", troque
-  `55SEUNUMEROAQUI` na URL `https://wa.me/...` pelo número no formato
-  `55DDDNUMERO` (somente dígitos, sem espaços, `+` ou parênteses). Ex.:
-  `5562999999999`.
+- **Número de WhatsApp:** aparece no botão "Confirmar pelo WhatsApp" e no
+  rodapé. Para trocá-lo, substitua `5562999432215` nos dois links
+  `https://wa.me/...` pelo novo número no formato `55DDDNUMERO` (somente
+  dígitos, sem espaços, `+` ou parênteses) e ajuste o texto exibido no rodapé.
 - **Agenda de agendamento:** na página de agendamento do Google Calendar,
   copie o código de incorporação (`<iframe ...>`) e cole-o dentro de
   `<div class="agenda-embed">`, no lugar do parágrafo
