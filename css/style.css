@@ -380,6 +380,7 @@ section > h2, section > .sobre-texto h2 { font-size: clamp(28px, 4vw, 38px); fon
 }
 .footer-logo { height: 76px; width: auto; margin-bottom: 10px; }
 .site-footer p { margin: 2px 0; }
+.site-footer a { color: var(--tela); display: inline-block; padding: 12px 0; }
 
 /* ---------- Acessibilidade ---------- */
 a:focus-visible, button:focus-visible {
