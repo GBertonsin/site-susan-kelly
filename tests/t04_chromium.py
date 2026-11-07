@@ -62,7 +62,9 @@ with sync_playwright() as p:
         for href, texto in links:
             if href == "#conteudo": continue
             pg.evaluate("window.scrollTo(0, 0)")
-            pg.click(f'a[href="{href}"]:visible >> nth=0'); pg.wait_for_timeout(700)
+            pg.click(f'a[href="{href}"]:visible >> nth=0')
+            # espera a rolagem suave terminar (posicao estavel por 300 ms), em vez de um tempo fixo
+            pg.evaluate("""() => new Promise(res => { let ult = -1, estavel = 0; const t = setInterval(() => { if (scrollY === ult) { estavel += 50; } else { estavel = 0; ult = scrollY; } if (estavel >= 300) { clearInterval(t); res(); } }, 50); setTimeout(() => { clearInterval(t); res(); }, 6000); })""")
             topo = pg.evaluate(f'document.querySelector("{href}").getBoundingClientRect().top')
             if not -5 <= topo <= 220:
                 falhas.append(f"{rotulo}: '{texto}' ({href}) não leva à seção (topo em {topo:.0f}px)")
