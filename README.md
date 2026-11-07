@@ -14,9 +14,9 @@ do que o processo manual atual (WhatsApp + Google Drive).
 - Site institucional estático (HTML/CSS/JS), com as seções Início, Sobre,
   Portfólio da Susan, Cursos, Galeria dos alunos, Agendamento e Contato.
 - Agendamento de aulas via **Agenda de Compromissos do Google Calendar**,
-  embutida na página (a ser configurada na Sprint 03).
+  embutida na página (hoje aponta para a agenda de testes do desenvolvedor; a agenda real da Susan entra depois dos testes T02 e T03).
 - Botão de confirmação via WhatsApp (`wa.me`) como reforço opcional.
-- Publicação automática (deploy) na Hostinger a cada push na branch `main`.
+- Publicação na Hostinger por envio manual dos arquivos (ver "Publicação"); o deploy automático por Git não foi configurado.
 
 O detalhamento completo de requisitos, escopo do MVP, arquitetura e
 planejamento das sprints está no relatório técnico do projeto (entregue
@@ -131,7 +131,7 @@ exatamente os 5 itens listados.
 | 2 | Portfólio | Confirmar com a Susan quais obras entram no portfólio e a ordem final (8 fotos inseridas). | Validar conteúdo (textos e imagens) com a Susan |
 | 3 | Cursos | Confirmar nomes, descrições e faixas etárias reais dos cursos. | Validar conteúdo (textos e imagens) com a Susan |
 | 4 | Galeria | Confirmar por escrito a autorização de uso de imagem dos trabalhos exibidos (inclusive de menores de idade) e trocar pelos trabalhos finais escolhidos pela Susan. | Validar conteúdo (textos e imagens) com a Susan |
-| 5 | Agendamento | Substituir o bloco `.agenda-embed` pelo `<iframe>` da Agenda de Compromissos do Google Calendar (Sprint 03). | Implementar Agenda de Compromissos do Google Calendar |
+| 5 | Agendamento | O `<iframe>` da Agenda de Compromissos do Google Calendar já está embutido, mas aponta para a agenda de testes do desenvolvedor. Trocar pelo endereço da agenda real da Susan depois dos testes T02 e T03. | Implementar Agenda de Compromissos do Google Calendar |
 
 Ao resolver uma pendência, remova o comentário `TODO` correspondente e a linha
 da tabela no mesmo commit.
@@ -160,19 +160,30 @@ Todo o conteúdo está em `index.html`; a aparência está em `css/style.css`.
   rodapé. Para trocá-lo, substitua `5562999432215` nos dois links
   `https://wa.me/...` pelo novo número no formato `55DDDNUMERO` (somente
   dígitos, sem espaços, `+` ou parênteses) e ajuste o texto exibido no rodapé.
-- **Agenda de agendamento:** na página de agendamento do Google Calendar,
-  copie o código de incorporação (`<iframe ...>`) e cole-o dentro de
-  `<div class="agenda-embed">`, no lugar do parágrafo
-  `agenda-placeholder`. O estilo do iframe já está no CSS; não use `style`
-  inline.
-- **Publicar:** salve, faça o commit e o push na branch `main`; o deploy é
-  automático (ver "Publicação").
+- **Agenda de agendamento:** no Google Calendar, abra a agenda de
+  compromissos, clique em Compartilhar, depois em Incorporar, e copie o
+  endereço do `src` do código `<iframe ...>`. Em `index.html`, cole-o no
+  atributo `src` do `<iframe>` que já está dentro de
+  `<div class="agenda-embed">` e apague o comentário `TODO` dessa seção. O
+  estilo do iframe já está no CSS; não use `style` inline.
+- **Publicar:** salve, faça o commit e o push na branch `main` e envie os
+  arquivos à Hostinger (ver "Publicação").
 
 ## Publicação (deploy)
 
-O deploy é feito pela integração Git nativa do hPanel da Hostinger
-(Avançado → Git), apontando para este repositório e branch `main`, com
-deploy automático a cada push.
+O site é publicado por envio manual dos arquivos, e o deploy automático por
+Git não foi configurado. Para publicar uma alteração:
+
+1. Na raiz do repositório, gere o pacote com os arquivos do site:
+   `git archive --format=zip -o site.zip HEAD index.html favicon.svg css js assets`
+2. No hPanel da Hostinger, abra o site, vá em Arquivos → Gerenciador de
+   Arquivos → `public_html`, apague o conteúdo anterior e envie o conteúdo
+   do zip (o `index.html` deve ficar direto em `public_html`).
+3. Abra o endereço do site e confira a página.
+
+Se o plano da Hostinger oferecer a integração Git (Avançado → Git), é
+possível conectá-la a este repositório e à branch `main` para publicar a
+cada push.
 
 ## Licença
 
