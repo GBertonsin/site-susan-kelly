@@ -295,7 +295,6 @@ section > h2, section > .sobre-texto h2 { font-size: clamp(28px, 4vw, 38px); fon
 
 @media (max-width: 560px) {
   .agendamento { padding: 56px 16px; }
-  .agenda-embed { --agenda-corte: 130px; --agenda-altura: 460px; }
   .lista-cursos li { grid-template-columns: 1fr; }
   .curso-tag { grid-column: 1; grid-row: auto; margin-top: 10px; justify-self: start; }
 }
@@ -346,6 +345,10 @@ section > h2, section > .sobre-texto h2 { font-size: clamp(28px, 4vw, 38px); fon
   width: 100%;
   margin-top: calc(var(--agenda-corte) * -1);
   height: calc(var(--agenda-altura) + var(--agenda-corte));
+}
+
+@media (max-width: 560px) {
+  .agenda-embed { --agenda-corte: 130px; --agenda-altura: 460px; }
 }
 
 .btn-whatsapp {
